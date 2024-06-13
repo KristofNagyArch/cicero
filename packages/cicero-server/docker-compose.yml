@@ -1,0 +1,19 @@
+version: '3'
+
+networks:
+  accord-network:
+    driver: bridge
+
+services:
+  cicero:
+    container_name: cicero-server
+    image: kristofnagyinterticket/cicero-server:1
+    environment:
+      CICERO_DIR: /app/cicero
+    volumes:
+      - ./cicero-server/example:/app/cicero
+    ports:
+      - "6001:6001"
+    networks:
+      - accord-network
+

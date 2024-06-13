@@ -164,6 +164,13 @@ curl --request POST \
 }'
 ```
 
+Test with example helloworld
+```
+curl --location 'http://localhost:6001/initialize/helloworld' \
+--header 'Content-Type: application/json' \
+--data '{"sample":"Name of the person to greet: \"Fred Blogs\".\nThank you!"}'
+```
+![Screenshot 2024-06-13 at 11.06.13.png](..%2F..%2F..%2F..%2F..%2Fnagykristof%2FDesktop%2FScreenshot%202024-06-13%20at%2011.06.13.png)
 ## License <a name="license"></a>
 Accord Project source code files are made available under the Apache License, Version 2.0 (Apache-2.0), located in the LICENSE file. Accord Project documentation files are made available under the Creative Commons Attribution 4.0 International License (CC-BY-4.0), available at http://creativecommons.org/licenses/by/4.0/.
 
